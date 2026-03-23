@@ -13,6 +13,7 @@ import Messages from './pages/Messages';
 import Certificates from './pages/Certificates';
 import Profile from './pages/Profile';
 import Settings from './pages/Settings';
+import FeedbackAnalysis from './pages/FeedbackAnalysis';
 import './App.css';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { ProgressProvider } from './context/ProgressContext';
@@ -57,6 +58,7 @@ function App() {
                 <Route path="/certificates" element={<Certificates />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/settings" element={<Settings />} />
+                <Route path="/feedback" element={<FeedbackAnalysis />} />
               </Route>
               
               {/* Lesson Video Page is outside AppLayout since it has its own layout */}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { BookOpen, LayoutDashboard, MonitorPlay, MessageSquare, Award, Settings, LogOut, Search } from 'lucide-react';
+import { BookOpen, LayoutDashboard, MonitorPlay, MessageSquare, Award, Settings, LogOut, Search, BarChart3 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 export default function Sidebar() {
@@ -43,6 +43,11 @@ export default function Sidebar() {
         <NavLink to="/certificates" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
           <Award size={20} />
           <span>Certificates</span>
+        </NavLink>
+
+        <NavLink to="/feedback" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
+          <BarChart3 size={20} />
+          <span>AI Feedback Analysis</span>
         </NavLink>
 
           <div style={{marginTop: 'auto'}}>
