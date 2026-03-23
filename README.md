@@ -1,3 +1,11 @@
+---
+title: LMS AI Assistant
+emoji: 🎓
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+pinned: false
+---
 <div align="center">
   <h1>🎓 LMS Artificial Intelligence Assistant</h1>
   <p>A full-stack Learning Management System featuring real-time AI student feedback analysis using Hugging Face Transformer models.</p>
